@@ -1,37 +1,84 @@
-<!-- 
-  HTML
-  HyperText Markup Language
-  Linguagem de Marcação de Hipertexto
- -->
+<!-- Fontes Gratuitas -->
+<!-- https://fonts.google.com -->
+
+<!-- Imagens modelo -->
+<!-- http://lorempixel.com/185/185/people/ -->
+
+<!-- Função clippy css helper -->
+<!-- https://bennettfeely.com/clippy/ -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lucas Passos - DoWhile 2021</title>
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
+    <head>
+        <title>Lucas Passos - DoWhile 2021</title>
 
-      body {
-        display: grid;
-        place-items: center;
-        background-color: black;
-      }
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="avatar">
+                    <span>
+                        <img src="images/build.svg" alt="Selo Rocketseat" />
+                    </span>
+                    <img id="userImage" src="" alt="Foto pessoal" />
+                </div>
+                <h1 id="userName">Lorem ipsum</h1>
+                <a
+                    id="userLink"
+                    href="https://github.com/LucasLm2"
+                    target="_black"
+                >
+                    <img src="images/github.svg" alt="ícone github" />
+                    <span id="userLogin">LoremIpsum</span>
+                </a>
 
-      h1 {
-        font-size: 1.5em;
-        color: white;
-      }
+                <p id="userBio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
 
-      a {
-        color: lightgray;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Lucas Passos</h1>
-    <a href="https://instagram.com/lmtwoblackone">@lmtwoblackone</a>
-  </body>
+                <ul id="socialLinks">
+                    <li class="youtube">
+                        <a href="https://www.youtube.com/" target="_blanck">
+                            <img src="images/youtube.svg" alt="ícone Youtube" />
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a
+                            href="https://instagram.com/lmtwoblackone"
+                            target="_blanck"
+                        >
+                            <img
+                                src="images/instagram.svg"
+                                alt="ícone Instagram"
+                            />
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a
+                            href="https://www.facebook.com/lukas.passos.16/"
+                            target="_blanck"
+                        >
+                            <img
+                                src="images/facebook.svg"
+                                alt="ícone Facebook"
+                            />
+                        </a>
+                    </li>
+                    <li class="twitter">
+                        <a href="https://twitter.com" target="_blanck">
+                            <img src="images/twitter.svg" alt="ícone Twitter" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>

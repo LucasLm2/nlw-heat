@@ -11,7 +11,7 @@
     <head>
         <title>Lucas Passos - DoWhile 2021</title>
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -26,18 +26,21 @@
                     <span>
                         <img src="images/build.svg" alt="Selo Rocketseat" />
                     </span>
-                    <img
-                        src="http://lorempixel.com/185/185/people/"
-                        alt="Foto pessoal"
-                    />
+                    <img id="userImage" src="" alt="Foto pessoal" />
                 </div>
-                <h1 id="userName">Lucas Passos</h1>
-                <a href="https://github.com/LucasLm2" target="_black">
+                <h1 id="userName">Lorem ipsum</h1>
+                <a
+                    id="userLink"
+                    href="https://github.com/LucasLm2"
+                    target="_black"
+                >
                     <img src="images/github.svg" alt="ícone github" />
-                    LucasLm2
+                    <span id="userLogin">LoremIpsum</span>
                 </a>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p id="userBio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
 
                 <ul id="socialLinks">
                     <li class="youtube">
@@ -76,23 +79,6 @@
             </div>
         </main>
 
-        <script>
-            const LinksSocialMedia = {
-                github: 'LucasLm2',
-                youtube: '',
-                facebook: 'lukas.passos.16',
-                instagram: 'lmtwoblackone',
-                twitter: ''
-            }
-
-            function changeSocialMediaLinks() {
-                for (let li of socialLinks.children) {
-                    const social = li.getAttribute('class')
-                    li.children[0].href = `https://www.${social}.com/${LinksSocialMedia[social]}`
-                }
-            }
-
-            changeSocialMediaLinks()
-        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>

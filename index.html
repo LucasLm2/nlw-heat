@@ -31,21 +31,21 @@
                         alt="Foto pessoal"
                     />
                 </div>
-                <h1>Lucas Passos</h1>
-                <a href="">
+                <h1 id="userName">Lucas Passos</h1>
+                <a href="https://github.com/LucasLm2" target="_black">
                     <img src="images/github.svg" alt="ícone github" />
                     LucasLm2
                 </a>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                <ul>
-                    <li>
+                <ul id="socialLinks">
+                    <li class="youtube">
                         <a href="https://www.youtube.com/" target="_blanck">
                             <img src="images/youtube.svg" alt="ícone Youtube" />
                         </a>
                     </li>
-                    <li>
+                    <li class="instagram">
                         <a
                             href="https://instagram.com/lmtwoblackone"
                             target="_blanck"
@@ -56,7 +56,7 @@
                             />
                         </a>
                     </li>
-                    <li>
+                    <li class="facebook">
                         <a
                             href="https://www.facebook.com/lukas.passos.16/"
                             target="_blanck"
@@ -67,7 +67,7 @@
                             />
                         </a>
                     </li>
-                    <li>
+                    <li class="twitter">
                         <a href="https://twitter.com" target="_blanck">
                             <img src="images/twitter.svg" alt="ícone Twitter" />
                         </a>
@@ -75,5 +75,24 @@
                 </ul>
             </div>
         </main>
+
+        <script>
+            const LinksSocialMedia = {
+                github: 'LucasLm2',
+                youtube: '',
+                facebook: 'lukas.passos.16',
+                instagram: 'lmtwoblackone',
+                twitter: ''
+            }
+
+            function changeSocialMediaLinks() {
+                for (let li of socialLinks.children) {
+                    const social = li.getAttribute('class')
+                    li.children[0].href = `https://www.${social}.com/${LinksSocialMedia[social]}`
+                }
+            }
+
+            changeSocialMediaLinks()
+        </script>
     </body>
 </html>
